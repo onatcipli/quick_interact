@@ -112,7 +112,8 @@ set of quick interaction widgets.
 
 ### QuickInteractConfig
 
-`QuickInteractConfig` is a configuration model for `QuickInteractBuilder` and `QuickInteract` classes. It allows you to customize the behavior and appearance of the quick interaction widgets.
+`QuickInteractConfig` is a configuration model for `QuickInteractBuilder` and `QuickInteract` classes. It allows you to
+customize the behavior and appearance of the quick interaction widgets.
 Parameters
 
 - `widgetSize`: Size of the quick interaction widgets container. Default is 35.
@@ -122,7 +123,8 @@ Parameters
 - `cursorAnimationDuration`: Duration of the cursor animation. Default is Duration(milliseconds: 300).
 - `containerColor`: Color of the quick interaction container. No default value.
 - `containerHeight`: Height of the quick interaction container. Default is 40.
-- `containerBorderRadius`: Border radius of the quick interaction container. Default is BorderRadius.all(Radius.circular(30)).
+- `containerBorderRadius`: Border radius of the quick interaction container. Default is BorderRadius.all(
+  Radius.circular(30)).
 - `containerAnimationDuration`: Duration of the container animation. Default is Duration(milliseconds: 300).
 - `containerAnimationCurve`: Curve of the container animation. Default is Curves.linearToEaseOut.
 - `widgetAnimationCurve`: Curve of the widget animation. Default is Curves.linearToEaseOut.
@@ -130,14 +132,17 @@ Parameters
   Named Constructors
 
 - `QuickInteractConfig()`: Creates a new instance of `QuickInteractConfig` with default values.
-- `QuickInteractConfig.onlyTransition()`: Creates a new instance of `QuickInteractConfig` with only transition offset -2. The default elevation is set to 5.
-- `QuickInteractConfig.onlyScale()`: Creates a new instance of `QuickInteractConfig` with only scale 2. The default elevation is set to 5.
+- `QuickInteractConfig.onlyTransition()`: Creates a new instance of `QuickInteractConfig` with only transition offset
+  -2. The default elevation is set to 5.
+- `QuickInteractConfig.onlyScale()`: Creates a new instance of `QuickInteractConfig` with only scale 2. The default
+  elevation is set to 5.
 
 ---
 
 ### Examples
 
-You can find more examples and different usages [in the example directory]().
+You can find more examples and different
+usages [in the example main.dart](https://github.com/onatcipli/quick_interact/blob/master/example/lib/main.dart).
 
 ### Upcoming Features
 
