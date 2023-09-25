@@ -4,6 +4,14 @@
 to create interactive widgets with ease, allowing you to show quick interactions for any widget with various
 configurations.
 
+![Screen Recording 2023-09-25 at 20 59 36](https://github.com/onatcipli/quick_interact/assets/26159899/2db8e0d8-5cee-4e0b-853f-9485f6534b2f)
+![Screen Recording 2023-09-25 at 20 58 54](https://github.com/onatcipli/quick_interact/assets/26159899/df99f6d9-3e53-411c-ad73-2f0eca8a5661)
+![Screen Recording 2023-09-25 at 20 59 16](https://github.com/onatcipli/quick_interact/assets/26159899/551d465e-8478-4c76-bb47-eeca95149f10)
+![Screen Recording 2023-09-25 at 21 00 45](https://github.com/onatcipli/quick_interact/assets/26159899/445b2014-c763-40ae-878c-8673d3231c61)
+![Screen Recording 2023-09-25 at 21 00 34](https://github.com/onatcipli/quick_interact/assets/26159899/0ed01e0b-de16-4c74-a8c4-c1ef7265c144)
+![Screen Recording 2023-09-25 at 21 00 16](https://github.com/onatcipli/quick_interact/assets/26159899/6f85fe5e-90dc-42f7-9b34-d6c0f224ff9f)
+
+
 ## Features
 
 - Display quick interactions for any widget
