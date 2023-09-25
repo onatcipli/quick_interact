@@ -38,6 +38,9 @@ class MyHomePage extends StatelessWidget {
             const Text(
               'long press icons to activate Quick Interact and hover and release.',
             ),
+            const SizedBox(
+              height: 100,
+            ),
             Center(
               child: QuickInteractions(
                 quickInteractionWidgets: const [
@@ -55,27 +58,43 @@ class MyHomePage extends StatelessWidget {
                 child: const Icon(Icons.send),
               ),
             ),
-            Center(
+            Expanded(
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  userAvatarQuickReaction(config: const QuickInteractConfig()),
-                  userAvatarQuickReaction(
-                      config: const QuickInteractConfig.onlyScale()),
-                  userAvatarQuickReaction(
-                      config: const QuickInteractConfig.onlyTransition()),
-                ],
-              ),
-            ),
-            Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  iconQuickReaction(config: const QuickInteractConfig()),
-                  iconQuickReaction(
-                      config: const QuickInteractConfig.onlyScale()),
-                  iconQuickReaction(
-                      config: const QuickInteractConfig.onlyTransition()),
+                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      iconQuickReaction(
+                        config: const QuickInteractConfig(),
+                      ),
+                      iconQuickReaction(
+                        config: const QuickInteractConfig.onlyScale(),
+                      ),
+                      iconQuickReaction(
+                        config: const QuickInteractConfig.onlyTransition(),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    width: 50,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      userAvatarQuickReaction(
+                        config: const QuickInteractConfig(),
+                      ),
+                      userAvatarQuickReaction(
+                        config: const QuickInteractConfig.onlyScale(),
+                      ),
+                      userAvatarQuickReaction(
+                        config: const QuickInteractConfig.onlyTransition(),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -122,20 +141,18 @@ class MyHomePage extends StatelessWidget {
   }
 
   Widget iconQuickReaction({required QuickInteractConfig config}) {
-    return Center(
-      child: QuickInteractions(
-        quickInteractionWidgets: const [
-          Icon(Icons.thumb_up),
-          Icon(Icons.thumb_down),
-          Icon(Icons.favorite),
-          Icon(Icons.bookmark),
-        ],
-        onQuickInteractCompleted: (index) {
-          print('Quick interaction selected: $index');
-        },
-        config: config,
-        child: const Icon(Icons.send),
-      ),
+    return QuickInteractions(
+      quickInteractionWidgets: const [
+        Icon(Icons.thumb_up),
+        Icon(Icons.thumb_down),
+        Icon(Icons.favorite),
+        Icon(Icons.bookmark),
+      ],
+      onQuickInteractCompleted: (index) {
+        print('Quick interaction selected: $index');
+      },
+      config: config,
+      child: const Icon(Icons.send),
     );
   }
 }
