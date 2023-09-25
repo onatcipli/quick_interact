@@ -1,6 +1,6 @@
 # Quick Interact
 
-Quick Interact is a Flutter package inspired by the Instagram quick send feature. It provides a simple and intuitive API
+[Quick Interact](https://pub.dev/packages/quick_interact) is a Flutter package inspired by the Instagram quick send feature. It provides a simple and intuitive API
 to create interactive widgets with ease, allowing you to show quick interactions for any widget with various
 configurations.
 
