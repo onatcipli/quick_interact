@@ -1,6 +1,6 @@
 name: quick_interact
 description: A flutter package for showing quick interactions for any widget
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/onatcipli/quick_interact.git
 
 environment:
